@@ -1,0 +1,66 @@
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stock-box {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 2px solid #333;
+    margin: 5px;
+    padding: 5px;
+    transition: background-color 0.5s;
+    background: #aaa7a7;
+    font-size: 21px;
+}
+
+.dark-red {
+    color: #ab0707;
+    font-size: 20px;
+}
+
+.light-red {
+    color: #ec6267;
+    font-size: 20px;
+}
+
+.gray {
+    color: #808080;
+    font-size: 20px;
+}
+
+.dark-green {
+    color: #006400;
+    font-size: 20px;
+}
+
+.light-green {
+    color: #5ddc5d;
+    font-size: 20px;
+}
+
+/* .stock-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    background: black;
+} */
+
+/* Colors Updated */
+.red-flash {
+    transition: background-color 1s;
+    background-color: #ffcccc; /* light red */
+}
+
+.green-flash {
+    transition: background-color 1s;
+    background-color: #ccffcc; /* light green */
+}
+
+.gray-flash {
+    transition: background-color 1s;
+    background-color: #ccc; /* gray */
+}

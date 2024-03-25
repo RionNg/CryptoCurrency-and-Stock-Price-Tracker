@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CryptoCurrency & Stock Price Tracker</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}"
+        />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </head>
+
+    <body>
+        <form id="add-ticker-form">
+            <input
+                type="text"
+                id="new-ticker"
+                placeholder="Add New Ticker"
+                required
+            />
+            <button type="submit">Add</button>
+
+            <p id="timer">Next update in <span id="counter"></span> seconds.</p>
+
+            <div id="tickers-grid"></div>
+        </form>
+    </body>
+</html>
